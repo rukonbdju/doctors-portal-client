@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const navItem=<>
-        <li><Link to={'/'}>Home</Link></li>
-        <li><Link to={'/Appointment'}>Appointment</Link></li>
-        <li><Link to={'/about'}>About</Link></li>
-        <li><Link to={'/reviews'}>Reviews</Link></li>
-        <li><Link to={'/contactUs'}>Contact Us</Link></li>
-        <li><Link to={'/login'} className='btn'>Login</Link></li>
-  </>
+        <li><Link className="btn btn-ghost normal-case" to={'/'}>Home</Link></li>
+        <li><Link className="btn btn-ghost normal-case" to={'/Appointment'}>Appointment</Link></li>
+        <li><Link className="btn btn-ghost normal-case" to={'/about'}>About</Link></li>
+        <li><Link className="btn btn-ghost normal-case" to={'/reviews'}>Reviews</Link></li>
+        <li><Link className="btn btn-ghost normal-case" to={'/contactUs'}>Contact Us</Link></li>
+        <li><Link className="btn btn-ghost normal-case" to={'/login'}>Login</Link></li>
+  </>;
   return (
     <div className="navbar bg-base-100">
   <div className="navbar-start">
@@ -21,7 +21,7 @@ const Navbar = () => {
         {navItem}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Doctors Portal</a>
+    <h1 className="btn btn-ghost normal-case text-xl">Doctors Portal</h1>
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal p-0">
